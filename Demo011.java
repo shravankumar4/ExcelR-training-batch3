@@ -1,6 +1,6 @@
 import java.util.*;
 
-class PS001 {
+class Demo011 {
     int id;
     String firstName;
     String lastName;
@@ -18,7 +18,7 @@ class PS001 {
         return firstName+" "+lastName;
     }
 }
-class PS001{
+class Demo011{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int id = 100;
