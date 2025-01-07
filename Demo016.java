@@ -4,7 +4,7 @@ class PalindromeOf3 {
 		return (n/ 100) == (n % 10);
 	}
 }
-public class PS006 {
+public class Demo016 {
     public static void main(String[] args) {
         PalindromeOf3 obj = new PalindromeOf3();
 		int n = 131;	
