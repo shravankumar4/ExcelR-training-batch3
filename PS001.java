@@ -62,7 +62,7 @@ class FullTimeEmployee extends Employee{
 }
 
 
-class PS002{
+class PS001{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int id = 100;
