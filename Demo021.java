@@ -23,7 +23,7 @@ public class Demo021 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int input = scanner.nextInt();
-        System.out.println("Result: " + getFizzBizz(input));1
+        System.out.println("Result: " + getFizzBizz(input));
         scanner.close();
     }
 }
