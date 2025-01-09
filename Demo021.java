@@ -1,25 +1,29 @@
+import java.util.Scanner;
+
 public class Demo021 {
-    public static String getFizzBizz(int value) {
-        if (value <= 0) {
+    public static String getFizzBizz(int num) {
+        if (num <= 0) {
             return "Error";
         }
-        if (value % 3 == 0 && value % 5 == 0) {
+        if (num % 3 == 0 && num % 5 == 0) {
             return "FIZZBIZZ";
         }
-        if (value % 3 == 0) {
+        else if (num % 3 == 0) {
             return "FIZZ";
         }
-        if (value % 5 == 0) {
+        else if (num % 5 == 0) {
             return "BIZZ";
         }
-        return String.valueOf(value);
+        else {
+            return Integer.toString(num);
+        }
     }
+
     public static void main(String[] args) {
-        System.out.println(getFizzBizz(33));  
-        System.out.println(getFizzBizz(5));   
-        System.out.println(getFizzBizz(15));  
-        System.out.println(getFizzBizz(7));   
-        System.out.println(getFizzBizz(-10)); 
-        System.out.println(getFizzBizz(0));   
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int input = scanner.nextInt();
+        System.out.println("Result: " + getFizzBizz(input));1
+        scanner.close();
     }
 }
